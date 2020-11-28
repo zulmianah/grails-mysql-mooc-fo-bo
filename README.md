@@ -9,3 +9,4 @@
 - login
 - logout
 - crud courses
+- emailing
