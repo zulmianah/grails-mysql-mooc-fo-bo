@@ -7,8 +7,6 @@
 
 <html>
 <head>
-    <meta name="layout" content="${gspLayout ?: 'main'}"/>
-    <title>Register</title>
 </head>
 
 <body>

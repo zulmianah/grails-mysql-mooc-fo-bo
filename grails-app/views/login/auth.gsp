@@ -7,8 +7,6 @@
 
 <html>
 <head>
-    <meta name="layout" content="${gspLayout ?: 'main'}"/>
-    <title><g:message code='springSecurity.login.title'/></title>
 </head>
 
 <body>
@@ -29,7 +27,6 @@
                     <div class="form-group">
                         <label for="password">Password</label>
                         <input type="password" class="form-control" name="${passwordParameter ?: 'password'}" id="password"/>
-                        <i id="passwordToggler" title="toggle password display" onclick="passwordDisplayToggle()">&#128065;</i>
                     </div>
 
                     <div class="form-group form-check">

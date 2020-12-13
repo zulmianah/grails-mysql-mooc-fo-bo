@@ -209,9 +209,10 @@
                                     <a class="dropdown-item" href="student-profile.html">
                                         <i class="material-icons">person</i> Public Profile
                                     </a>
-                                    <a class="dropdown-item" href="guest-login.html">
-                                        <i class="material-icons">lock</i> Logout
-                                    </a>
+                                    <g:form class="dropdown-item" controller="logout">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">lock_open</i>
+                                        <g:submitButton class="dropdown-item" name="Submit" value="Logout" style="color:gray" />
+                                    </g:form>
                                 </div>
                             </li>
                             <!-- // END User dropdown -->
@@ -388,9 +389,9 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="guest-login.html">
-                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">lock_open</i> Logout
-                                    </a>
+                                    <g:form class="sidebar-menu-button" controller="logout">
+                                        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">lock_open</i> <g:submitButton class="dropdown-item" name="Submit" value="Logout" style="color:gray" />
+                                    </g:form>
                                 </li>
                             </ul>
                         </div>
