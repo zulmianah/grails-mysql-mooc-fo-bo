@@ -15,6 +15,15 @@
 
     <a href="#list-product" class="skip" tabindex="-1"><g:message code="default.link.skip.label"
                                                                   default="Skip to content&hellip;"/></a>
+    <g:form class="form-group" action="search" method="GET">
+        <fieldset class="form">
+            <label class="form-label">Search</label>
+            <g:textField class="form-control" name="word"/>
+        </fieldset>
+        <fieldset class="form">
+            <g:submitButton name="search" class="btn btn-success" value="${message(code: 'default.button.create.label', default: 'search')}"/>
+        </fieldset>
+    </g:form>
 
     <div class="nav" role="navigation">
         <ul>

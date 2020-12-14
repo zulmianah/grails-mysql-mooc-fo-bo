@@ -11,6 +11,13 @@ class ProductController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER'])
+    def search(String word) {
+//        params.max = Math.min(max ?: 10, 100)
+//        params.find {Product.findByProdName('math')}
+        respond productService.findByProdNameLike(params.word+"%")
+    }
+
+    @Secured(['ROLE_ADMIN', 'ROLE_USER'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond productService.list(params), model:[productCount: productService.count()]

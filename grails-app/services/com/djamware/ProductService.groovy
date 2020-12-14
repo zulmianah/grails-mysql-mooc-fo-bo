@@ -15,4 +15,6 @@ interface ProductService {
 
     Product save(Product product)
 
+    List<Product> findByProdNameLike(String word)
+
 }
