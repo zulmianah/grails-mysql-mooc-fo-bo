@@ -1,5 +1,11 @@
 package com.djamware
 
+import grails.plugin.springsecurity.annotation.Secured
+import grails.rest.Resource
+
+
+@Secured(['ROLE_ADMIN', 'ROLE_USER'])
+@Resource(uri='/api/products', formats=['json'])
 class Product {
 
     String prodCode
